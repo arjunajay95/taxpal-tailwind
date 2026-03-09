@@ -145,48 +145,53 @@
 
             <!-- For larger Screens (PC) -->
             <div class="hidden lg:grid grid-cols-12 items-center">
+              <!-- Tab List -->
               <div class="col-span-5">
                 <div class="flex flex-col">
-                  <div class="p-6 rounded-l-xl rounded-r-none bg-white/10 ring-1 ring-inset ring-white/10">
+                  <div class="feature-tab p-6 rounded-l-xl rounded-r-none bg-white/10 active ring-1 ring-inset ring-white/10 transition-all duration-200">
                     <h3 class="text-lg font-lexend text-white">Payroll</h3>
                     <p class="mt-2 text-sm text-white">Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.</p>
                   </div>
-                  <div class="p-6 rounded-l-xl rounded-r-none hover:bg-white/5">
+                  <div class="feature-tab p-6 rounded-l-xl rounded-r-none hover:bg-white/5 transition-all duration-200">
                     <h3 class="text-lg font-lexend text-white">Claim expenses</h3>
-                    <p class="mt-2 text-sm text-white">All of your receipts organized into one place, as long as you don't mind typing in the data by hand.</p>
+                    <p class="mt-2 text-sm text-blue-100">All of your receipts organized into one place, as long as you don't mind typing in the data by hand.</p>
                   </div>
-                  <div class="p-6 rounded-l-xl rounded-r-none hover:bg-white/5">
+                  <div class="feature-tab p-6 rounded-l-xl rounded-r-none hover:bg-white/5 transition-all duration-200">
                     <h3 class="text-lg font-lexend text-white">VAT handling</h3>
-                    <p class="mt-2 text-sm text-white">We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.</p>
+                    <p class="mt-2 text-sm text-blue-100">We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.</p>
                   </div>
-                  <div class="p-6 rounded-l-xl rounded-r-none hover:bg-white/5">
+                  <div class="feature-tab p-6 rounded-l-xl rounded-r-none hover:bg-white/5 transition-all duration-200">
                     <h3 class="text-lg font-lexend text-white">Reporting</h3>
-                    <p class="mt-2 text-sm text-white">Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.</p>
+                    <p class="mt-2 text-sm text-blue-100">Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.</p>
                   </div>
                 </div>
               </div>
+              <!-- Tab Image Panel -->
               <div class="col-span-7">
                 <div class="w-271.25 rounded-xl overflow-hidden shadow-xl shadow-blue-900/20 bg-slate-50">
-                  <img src="./payroll.webp" alt="PayRoll" class="w-full" />
+                  <img id="feature-img" alt="Feature screenshot" class="w-full" src="https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpayroll.948a58d4.png&w=3840&q=75" />
                 </div>
               </div>
             </div>
 
             <!-- For Mobile Screens -->
-            <div class="flex flex-col backdrop-blur-sm bg-white/10 rounded-xl lg:hidden text-center ring-1 ring-white/10 ring-inset w-screen relative left-1/2 -translate-x-1/2 md:w-auto md:static md:translate-x-0">
+            <div class="px-2 py-2 flex flex-col backdrop-blur-sm bg-white/10 rounded-xl lg:hidden text-center ring-1 ring-white/10 ring-inset w-screen relative left-1/2 -translate-x-1/2 md:w-auto md:static md:translate-x-0">
               <div class="md:px-10 py-10">
-                <div class="flex justify-center items-start md:gap-6 overflow-x-auto flex-nowrap">
-                  <h3 class="inline-flex items-center justify-center px-4 py-2 bg-white text-blue-600 rounded-full text-sm md:text-lg font-lexend">Payroll</h3>
-                  <h3 class="inline-flex items-center justify-center px-4 py-2 text-blue-50 rounded-full text-sm md:text-lg font-lexend font-light">Claim expenses</h3>
-                  <h3 class="inline-flex items-center justify-center px-4 py-2 text-blue-50 rounded-full text-sm md:text-lg font-lexend font-light">VAT handling</h3>
-                  <h3 class="inline-flex items-center justify-center px-4 py-2 text-blue-50 rounded-full text-sm md:text-lg font-lexend font-light">Reporting</h3>
+                <div class="flex justify-evenly items-center md:gap-6 overflow-x-auto flex-nowrap">
+                  <h3 class="feature-tab-mobile inline-flex items-center justify-center px-2 py-2 rounded-full text-sm md:text-lg font-lexend font-light text-blue-50">Payroll</h3>
+                  <h3 class="feature-tab-mobile inline-flex items-center justify-center px-2 py-2 rounded-full text-sm md:text-lg font-lexend font-light text-blue-50">Claim expenses</h3>
+                  <h3 class="feature-tab-mobile inline-flex items-center justify-center px-2 py-2 rounded-full text-sm md:text-lg font-lexend font-light text-blue-50">VAT handling</h3>
+                  <h3 class="feature-tab-mobile inline-flex items-center justify-center px-2 py-2 rounded-full text-sm md:text-lg font-lexend font-light text-blue-50">Reporting</h3>
                 </div>
                 <div>
-                  <p class="mx-auto mt-8 text-white">Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.</p>
+                  <p class="feature-info mx-auto mt-8 text-white hidden">Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.</p>
+                  <p class="feature-info mx-auto mt-8 text-white hidden">All of your receipts organized into one place, as long as you don't mind typing in the data by hand.</p>
+                  <p class="feature-info mx-auto mt-8 text-white hidden">We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.</p>
+                  <p class="feature-info mx-auto mt-8 text-white hidden">Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.</p>
                 </div>
               </div>
               <div class="rounded-xl overflow-hidden shadow-xl shadow-blue-900/20 bg-slate-50">
-                  <img src="./payroll.webp" alt="PayRoll" class="w-full" />
+                  <img id="mobile-feature-img" alt="Feature screenshot" class="w-full" src="https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpayroll.948a58d4.png&w=3840&q=75" />
               </div>
             </div>
           </div>
@@ -205,8 +210,8 @@
             <!-- Feature Cards Block -->
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-8 w-full">
               <!-- -------CARD 1-------- -->
-              <div class="cursor-pointer">
-                <div class="bg-blue-600 rounded-lg w-9">
+              <div class="feature-card cursor-pointer transition-all duration-500">
+                <div class="icon bg-blue-600 rounded-lg w-9">
                   <svg aria-hidden="true" class="h-9 w-9" fill="none">
                     <defs>
                       <linearGradient id="_R_2meavb_" x1="11.5" y1="18" x2="36" y2="15.5" gradientUnits="userSpaceOnUse">
@@ -223,46 +228,46 @@
                 <!-- Card 1 Image (For Mobile Screens Only) -->
                 <div class="lg:hidden py-8 mb-10">
                   <div class="w-211 overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
-                    <img src="./profit-loss.webp" alt="Profit Loss" />
+                    <img src="https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofit-loss.32a24c33.png&w=1080&q=75" alt="Profit Loss" />
                   </div>
                 </div>
               </div>
 
               <!-- --------CARD 2---------- -->
-              <div class="opacity-75 hover:opacity-100 cursor-pointer">
-                <div class="bg-slate-500 rounded-lg w-9">
+              <div class="feature-card lg:opacity-75 lg:hover:opacity-100 cursor-pointer transition-all duration-500">
+                <div class="icon bg-blue-600 lg:bg-slate-500 rounded-lg w-9">
                   <svg aria-hidden="true" class="h-9 w-9" fill="none">
                     <path opacity=".5" d="M8 17a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path>
                     <path opacity=".3" d="M8 24a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path>
                     <path d="M8 10a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path>
                   </svg>
                 </div>
-                <h3 class="mt-6 text-sm text-slate-600 font-medium">Inventory</h3>
+                <h3 class="mt-6 text-sm text-blue-600 lg:text-slate-600 font-medium">Inventory</h3>
                 <p class="mt-2 text-xl font-lexend text-slate-900">Never lose track of what’s in stock with accurate inventory tracking.</p>
                 <p class="mt-4 text-sm text-slate-600 leading-7">We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure.</p>
                 <!-- Card 2 Image (For Mobile Screens Only) -->
                 <div class="lg:hidden py-8 mb-10">
                   <div class="w-211 overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
-                    <img src="./profit-loss.webp" alt="Profit Loss" />
+                    <img src="https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Finventory.6022a851.png&w=1080&q=75" alt="Profit Loss" />
                   </div>
                 </div>
               </div>
 
               <!-- ----------CARD 3-------- -->
-              <div class="opacity-75 hover:opacity-100 cursor-pointer">
-                <div class="bg-slate-500 rounded-lg w-9">
+              <div class="feature-card lg:opacity-75 lg:hover:opacity-100 cursor-pointer transition-all duration-500">
+                <div class="icon bg-blue-600 lg:bg-slate-500 rounded-lg w-9">
                   <svg aria-hidden="true" class="h-9 w-9" fill="none">
                     <path opacity=".5" d="M25.778 25.778c.39.39 1.027.393 1.384-.028A11.952 11.952 0 0 0 30 18c0-6.627-5.373-12-12-12S6 11.373 6 18c0 2.954 1.067 5.659 2.838 7.75.357.421.993.419 1.384.028.39-.39.386-1.02.036-1.448A9.959 9.959 0 0 1 8 18c0-5.523 4.477-10 10-10s10 4.477 10 10a9.959 9.959 0 0 1-2.258 6.33c-.35.427-.354 1.058.036 1.448Z" fill="#fff"></path>
                     <path d="M12 28.395V28a6 6 0 0 1 12 0v.395A11.945 11.945 0 0 1 18 30c-2.186 0-4.235-.584-6-1.605ZM21 16.5c0-1.933-.5-3.5-3-3.5s-3 1.567-3 3.5 1.343 3.5 3 3.5 3-1.567 3-3.5Z" fill="#fff"></path>
                   </svg>
                 </div>
-                <h3 class="mt-6 text-sm text-slate-600 font-medium">Contacts</h3>
+                <h3 class="mt-6 text-sm text-blue-600 lg:text-slate-600 font-medium">Contacts</h3>
                 <p class="mt-2 text-xl font-lexend text-slate-900">Organize all of your contacts, service providers, and invoices in one place.</p>
                 <p class="mt-4 text-sm text-slate-600 leading-7">This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional.</p>
                 <!-- Card 3 Image (For Mobile Screens Only) -->
                 <div class="lg:hidden py-8">
                   <div class="w-211 overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
-                    <img src="./profit-loss.webp" alt="Profit Loss" />
+                    <img src="https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcontacts.1c490a2c.png&w=1080&q=75" alt="Profit Loss" />
                   </div>
                 </div>
               </div>
@@ -270,15 +275,20 @@
 
             <!-- Main Feature's Image (For Larger Screens) -->
             <div class="hidden lg:block mt-20 mb-5 bg-slate-200 rounded-4xl px-10 py-16 overflow-hidden ring-1 ring-slate-500/30">
-              <div class="flex">
-                <div class="px-5 ">
+              <div id="scroll-container" class="flex scroll-smooth">
+                <div class="px-5 transition-all duration-500">
                   <div class="w-211 overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
-                    <img src="./profit-loss.webp" alt="Profit Loss" />
+                    <img src="https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofit-loss.32a24c33.png&w=1080&q=75" alt="Profit Loss" />
                   </div>
                 </div>
-                <div class="px-5 opacity-65">
+                <div class="px-5 opacity-65 transition-all duration-500">
                   <div class="w-211 overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
-                    <img src="./profit-loss.webp" alt="Profit Loss" />
+                    <img src="https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Finventory.6022a851.png&w=1080&q=75" alt="Profit Loss" />
+                  </div>
+                </div>
+                <div class="px-5 opacity-65 transition-all duration-500">
+                  <div class="w-211 overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
+                    <img src="https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcontacts.1c490a2c.png&w=1080&q=75" alt="Profit Loss" />
                   </div>
                 </div>
               </div>
@@ -643,6 +653,6 @@
         </div>
       </div>
     </footer>
-
+    <script src="script.js"></script>
   </body>
 </html>

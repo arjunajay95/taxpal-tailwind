@@ -1,48 +1,136 @@
-# TaxPal Tailwind
+# 💸 TaxPal Tailwind
 
-A pixel-faithful clone of [Salient](https://tailwindcss.com/plus/templates/salient), a SaaS marketing landing page template by the Tailwind CSS team. Built as a hands-on practice project to sharpen my skills with Tailwind CSS utility classes, custom classes, and mobile-first development.
+![HTML](https://img.shields.io/badge/HTML-5-orange)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-38bdf8)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![Status](https://img.shields.io/badge/Project-Practice%20Build-success)
 
-> **Note:** This is a UI-only clone built for learning purposes. Interactivity (mobile menu, animations, etc.) is not yet implemented. The focus was entirely on replicating the layout and visual design.
+
+A pixel-faithful clone of the **Salient** SaaS landing page template created by the Tailwind CSS team.
+
+This project was built as a hands-on exercise to strengthen my understanding of **Tailwind CSS utility classes**, **mobile-first design**, and **vanilla JavaScript interactivity**, all without relying on frameworks.
+
+Instead of using the original React and Next.js stack, I rebuilt the entire page from scratch using only **HTML**, **Tailwind via CDN**, and **plain JavaScript**. The goal was simple: understand how everything works under the hood when a framework isn't doing the heavy lifting.
+
+### 👉 Live Demo
+
+🔗 **View the project here:**  
+[arjunajay95.github.io/taxpal-tailwind/](https://arjunajay95.github.io/taxpal-tailwind/)
 
 ---
 
-## What It Is
+## 🚀 What This Project Is
 
-TaxPal Tailwind is a static HTML recreation of the Salient template. The original is built with React and Next.js. This version strips all of that away and rebuilds it from scratch using plain HTML and Tailwind CSS via CDN, which made it a great exercise in understanding how utility-first CSS actually works under the hood, without a build step or framework doing the heavy lifting.
+**TaxPal Tailwind** is a static recreation of the **Salient** marketing landing page.
 
-The page includes all the major sections from the original design: hero, feature sections, pricing, testimonials, and footer, all fully responsive across mobile, tablet, and desktop.
+The original template is built with React and Next.js. In this version, all of that was removed and replaced with simple HTML structure, Tailwind utility classes, and small pieces of JavaScript to control interactivity.
+
+Working this way forces you to really understand:
+
+- how layouts are constructed  
+- how utility classes stack together  
+- how UI state is managed through the DOM  
+
+The page includes the main sections from the original design:
+
+Hero section, feature sections, pricing tables, testimonials, and footer.  
+Everything is fully responsive across **mobile, tablet, and desktop**.
 
 ---
 
-## Tech Stack
+## 🛠 Tech Stack
+
+Simple and minimal by design.
 
 - **HTML5**
-- **Tailwind CSS** (via CDN)
+- **Tailwind CSS** (CDN version)
+- **Vanilla JavaScript**
 
-No build tools, no frameworks, no dependencies to install.
+There are **no build tools**, **no frameworks**, and **no dependencies to install**.
 
----
-
-## Goals and What I Learned
-
-The main goal was to get comfortable with Tailwind CSS as a utility-first framework by working through a real, well-designed template rather than a toy project. Some of the specific things I focused on:
-
-**Utility classes in practice.** Working through a design this detailed pushed me to learn a wide range of Tailwind's utility classes, not just the common ones. Spacing, typography, borders, shadows, colors, and layout all got a solid workout here.
-
-**Custom classes.** Where utility classes alone weren't quite cutting it, I practiced extending Tailwind with custom class definitions, which helped me understand where the line is between using the framework and fighting it.
-
-**Mobile-first development.** Tailwind's responsive prefixes (`sm:`, `md:`, `lg:`, etc.) follow a mobile-first approach, and rebuilding a polished multi-section layout really drilled that workflow in. Every section was designed for mobile first, then scaled up.
-
-**Reading and replicating production-quality design.** Staying close to the original Salient design meant paying close attention to details like spacing rhythm, type hierarchy, and layout structure. That kind of close reading is genuinely useful as a learning exercise.
+Just open the HTML file and it runs.
 
 ---
 
-## What's Next
+## ✨ Features
 
-JavaScript interactivity is the next step. Things like the mobile navigation toggle and any scroll-based behavior aren't wired up yet. That'll be the focus of the next phase of this project.
+### 📱 Mobile Navigation Toggle
+
+The mobile navigation menu opens and closes smoothly on small screens using a simple JavaScript toggle. The overlay and menu states are controlled through class changes.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/2c6ca86d-3312-4f0f-bbab-c56f07455b2c" width="360">
+</p>
 
 ---
 
-## Original Template
+### 🔁 Interactive Feature Image Swap
 
-This project is based on the [Salient template](https://tailwindcss.com/plus/templates/salient) by [Tailwind Labs](https://tailwindcss.com). All design credit goes to their team. This clone was built purely for educational purposes and is not intended for commercial use.
+Selecting different feature items updates the image displayed in the feature preview area. The behavior mimics the scrolling interaction used in the original Salient design.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/37679a6e-325f-411c-ba3d-9ef51d6c4597" width="650">
+</p>
+
+---
+
+### 🧩 Active Card Selection
+
+Clicking a card activates it while automatically deactivating the previously selected one. This keeps the interface clean and predictable without needing any UI library.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/41224e0a-0d47-44d4-ac4d-c7b4b823b732" width="650">
+</p>
+
+---
+
+## 🎯 Goals and What I Learned
+
+The real goal of this project wasn't just recreating a page visually. It was about **understanding the mechanics behind modern UI development**.
+
+Working through a full production-quality layout forced me to pay attention to details that are easy to overlook in small practice projects.
+
+### Utility Classes in Practice
+
+Rebuilding a detailed design meant using a wide range of Tailwind utilities. Spacing, typography, shadows, colors, layout, and responsive rules all came into play. It was a good way to move past the basic classes and get comfortable with the full system.
+
+### Custom Classes
+
+Sometimes utility classes alone weren't enough. In those cases I experimented with small custom classes to keep things clean. It helped me understand where Tailwind works best and where a tiny bit of custom CSS makes things easier.
+
+### Mobile-First Workflow
+
+Tailwind's responsive prefixes (`sm`, `md`, `lg`, etc.) naturally push you toward a mobile-first workflow. Every section started as a mobile layout and then scaled upward.
+
+After a few sections this approach starts to feel very natural.
+
+### Vanilla JavaScript DOM Manipulation
+
+Since there were no frameworks involved, all interactivity had to be handled directly through the DOM.
+
+That meant working with:
+
+- event listeners  
+- class toggling  
+- simple UI state management  
+
+It's a good reminder of what libraries like React are abstracting away.
+
+### Studying Real Design
+
+Replicating the Salient template forced me to pay attention to spacing rhythm, typography hierarchy, and layout consistency.
+
+That kind of close observation is surprisingly valuable when learning frontend development.
+
+---
+
+## 🎨 Original Template Credit
+
+This project is based on the **Salient** template by **Tailwind Labs**.
+
+🔗 https://tailwindcss.com/plus/templates/salient
+
+All design credit goes to their team.  
+This clone was created **purely for educational purposes** and is not intended for commercial use.
+
+⭐ If you found this project useful or interesting, feel free to star the repo!

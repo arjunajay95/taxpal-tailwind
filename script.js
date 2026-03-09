@@ -7,6 +7,35 @@ const mobile_feature_info = document.querySelectorAll(".feature-info");
 
 const feature_card = document.querySelectorAll(".feature-card");
 
+const hamburger = document.querySelector(".hamburger");
+const overlay = document.getElementById("overlay");
+const mobile_menu = document.getElementById("mobile-menu");
+
+// ------------------------------------------- < Mobile Nav Menu >----------------------------------------------- //
+
+// Function to toggle menu, overlay and change hamburger icon to cross
+function toggleMenu() {
+  const line1 = document.getElementById("line-1");
+  const line2 = document.getElementById("line-2");
+  [line1, line2].forEach((line) => {
+    line.classList.toggle("scale-90");
+    line.classList.toggle("opacity-0");
+  });
+
+  overlay.classList.toggle("opacity-100");
+  overlay.classList.toggle("pointer-events-auto");
+  overlay.classList.toggle("pointer-events-none");
+
+  mobile_menu.classList.toggle("opacity-100");
+  mobile_menu.classList.toggle("pointer-events-auto");
+  mobile_menu.classList.toggle("pointer-events-none");
+}
+
+// All three menu triggers
+hamburger.addEventListener("click", toggleMenu);
+overlay.addEventListener("click", toggleMenu);
+mobile_menu.addEventListener("click", toggleMenu);
+
 // ------------------------------------------- < Primary Features >----------------------------------------------- //
 
 // Store feature image screenshot URLs in an array matching the order of tabs

@@ -12,14 +12,14 @@ This project was built as a hands-on exercise to strengthen my understanding of 
 
 Instead of using the original React and Next.js stack, I rebuilt the entire page from scratch using only **HTML**, **Tailwind via CDN**, and **plain JavaScript**. The goal was simple: understand how everything works under the hood when a framework isn't doing the heavy lifting.
 
-### 👉 Live Demo
+### Live Demo
 
 🔗 **View the project here:**  
 [arjunajay95.github.io/taxpal-tailwind/](https://arjunajay95.github.io/taxpal-tailwind/)
 
----
+<br>
 
-## 🚀 What This Project Is
+## What This Project Is
 
 **TaxPal Tailwind** is a static recreation of the **Salient** marketing landing page.
 
@@ -36,9 +36,9 @@ The page includes the main sections from the original design:
 Hero section, feature sections, pricing tables, testimonials, and footer.  
 Everything is fully responsive across **mobile, tablet, and desktop**.
 
----
+<br>
 
-## 🛠 Tech Stack
+## Tech Stack
 
 Simple and minimal by design.
 
@@ -50,9 +50,9 @@ There are **no build tools**, **no frameworks**, and **no dependencies to instal
 
 Just open the HTML file and it runs.
 
----
+<br>
 
-## ✨ Features
+## Features
 
 ### 📱 Mobile Navigation Toggle
 
@@ -62,7 +62,7 @@ The mobile navigation menu opens and closes smoothly on small screens using a si
 <img src="https://github.com/user-attachments/assets/2c6ca86d-3312-4f0f-bbab-c56f07455b2c" width="360">
 </p>
 
----
+<br>
 
 ### 🔁 Interactive Feature Image Swap
 
@@ -72,7 +72,7 @@ Selecting different feature items updates the image displayed in the feature pre
 <img src="https://github.com/user-attachments/assets/37679a6e-325f-411c-ba3d-9ef51d6c4597" width="650">
 </p>
 
----
+<br>
 
 ### 🧩 Active Card Selection
 
@@ -82,29 +82,29 @@ Clicking a card activates it while automatically deactivating the previously sel
 <img src="https://github.com/user-attachments/assets/41224e0a-0d47-44d4-ac4d-c7b4b823b732" width="650">
 </p>
 
----
+<br>
 
-## 🎯 Goals and What I Learned
+## Goals and What I Learned
 
 The real goal of this project wasn't just recreating a page visually. It was about **understanding the mechanics behind modern UI development**.
 
 Working through a full production-quality layout forced me to pay attention to details that are easy to overlook in small practice projects.
 
-### Utility Classes in Practice
+### 🛠 Utility Classes in Practice
 
 Rebuilding a detailed design meant using a wide range of Tailwind utilities. Spacing, typography, shadows, colors, layout, and responsive rules all came into play. It was a good way to move past the basic classes and get comfortable with the full system.
 
-### Custom Classes
+### 🔧 Custom Classes
 
 Sometimes utility classes alone weren't enough. In those cases I experimented with small custom classes to keep things clean. It helped me understand where Tailwind works best and where a tiny bit of custom CSS makes things easier.
 
-### Mobile-First Workflow
+### 📱 Mobile-First Workflow
 
 Tailwind's responsive prefixes (`sm`, `md`, `lg`, etc.) naturally push you toward a mobile-first workflow. Every section started as a mobile layout and then scaled upward.
 
 After a few sections this approach starts to feel very natural.
 
-### Vanilla JavaScript DOM Manipulation
+### 📊 Vanilla JavaScript DOM Manipulation
 
 Since there were no frameworks involved, all interactivity had to be handled directly through the DOM.
 
@@ -116,15 +116,15 @@ That meant working with:
 
 It's a good reminder of what libraries like React are abstracting away.
 
-### Studying Real Design
+### 🧠 Studying Real Design
 
 Replicating the Salient template forced me to pay attention to spacing rhythm, typography hierarchy, and layout consistency.
 
 That kind of close observation is surprisingly valuable when learning frontend development.
 
----
+<br>
 
-## 🎨 Original Template Credit
+## Original Template Credit
 
 This project is based on the **Salient** template by **Tailwind Labs**.
 

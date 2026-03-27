@@ -10,7 +10,7 @@ A pixel-faithful clone of the **Salient** SaaS landing page template created by 
 
 This project was built as a hands-on exercise to strengthen my understanding of **Tailwind CSS utility classes**, **mobile-first design**, and **vanilla JavaScript interactivity**, all without relying on frameworks.
 
-Instead of using the original React and Next.js stack, I rebuilt the entire page from scratch using only **HTML**, **Tailwind via CDN**, and **plain JavaScript**. The goal was simple: understand how everything works under the hood when a framework isn't doing the heavy lifting.
+Instead of using the original React and Next.js stack, I rebuilt the entire page from scratch using only **HTML**, **Tailwind via CDN**, and bit of **plain JavaScript**. The goal was simple: understand how everything works under the hood when a framework isn't doing the heavy lifting.
 
 ### Live Demo
 

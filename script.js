@@ -39,7 +39,7 @@ mobile_menu.addEventListener("click", toggleMenu);
 // ------------------------------------------- < Primary Features >----------------------------------------------- //
 
 // Store feature image screenshot URLs in an array matching the order of tabs
-const imageUrls = ["https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpayroll.948a58d4.png&w=3840&q=75", "https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fexpenses.6dca4b99.png&w=3840&q=75", "https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvat-returns.90e74b9d.png&w=3840&q=75", "https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freporting.81550c92.png&w=3840&q=75"];
+const imageUrls = ["https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpayroll.06tgej18d4mub.png&w=3840&q=75", "https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fexpenses.0039g4_zf~-b6.png&w=3840&q=75", "https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvat-returns.04n7v1az-p5ob.png&w=3840&q=75", "https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freporting.16thf9pc-k58p.png&w=3840&q=75"];
 
 // Active classes
 const active_classes = ["active", "bg-white/10", "ring-1", "ring-white/10", "ring-inset"];
